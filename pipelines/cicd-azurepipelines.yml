@@ -11,7 +11,7 @@ stages:
      steps:
        - task: Docker@2
          inputs:
-           containerRegistry: 'cicdacr'
+           containerRegistry: 'eyacr'
            repository: 'simpleweb'
            command: 'buildAndPush'
            Dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
